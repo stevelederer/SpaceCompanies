@@ -1,24 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bjh-NQ-WVx">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Launch Service Providers-->
+        <scene sceneID="p34-j2-1cR">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <tableViewController id="Kyt-Yh-DyU" customClass="LSPTableViewController" customModule="SpaceCompanies" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="215" estimatedRowHeight="215" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ujv-Ay-2Wr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="LSPCell" rowHeight="215" id="Vgs-1B-fiM" customClass="LSPTableViewCell" customModule="SpaceCompanies" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="215"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Vgs-1B-fiM" id="Bt4-1a-VZ8">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="214.66666666666666"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(acronym)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Mw-5S-Vc2">
+                                            <rect key="frame" x="8" y="32" width="359" height="23.333333333333329"/>
+                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(name)" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Iq-Ee-wok">
+                                            <rect key="frame" x="8" y="0.0" width="359" height="29"/>
+                                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="21"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="(Website) " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QCj-d4-lis">
+                                            <rect key="frame" x="3" y="58.333333333333329" width="364" height="148.33333333333337"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                        </textView>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="(Wikipedia)" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MHb-pA-Q1U">
+                                            <rect key="frame" x="5" y="62" width="364" height="100"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                        </textView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="9Mw-5S-Vc2" firstAttribute="leading" secondItem="Bt4-1a-VZ8" secondAttribute="leading" constant="8" id="3wQ-Di-Y8Y"/>
+                                        <constraint firstAttribute="trailing" secondItem="QCj-d4-lis" secondAttribute="trailing" constant="8" id="CY3-Ny-Lvw"/>
+                                        <constraint firstItem="6Iq-Ee-wok" firstAttribute="leading" secondItem="Bt4-1a-VZ8" secondAttribute="leading" constant="8" id="J7e-Be-XfK"/>
+                                        <constraint firstAttribute="bottom" secondItem="QCj-d4-lis" secondAttribute="bottom" constant="8" id="LXc-La-xfJ"/>
+                                        <constraint firstItem="QCj-d4-lis" firstAttribute="leading" secondItem="Bt4-1a-VZ8" secondAttribute="leading" constant="3" id="Las-yL-2wB"/>
+                                        <constraint firstItem="QCj-d4-lis" firstAttribute="top" secondItem="9Mw-5S-Vc2" secondAttribute="bottom" constant="3" id="VTg-gS-SJ4"/>
+                                        <constraint firstAttribute="trailing" secondItem="9Mw-5S-Vc2" secondAttribute="trailing" constant="8" id="ZKE-9e-yZu"/>
+                                        <constraint firstAttribute="trailing" secondItem="6Iq-Ee-wok" secondAttribute="trailing" constant="8" id="fr3-7K-19a"/>
+                                        <constraint firstItem="6Iq-Ee-wok" firstAttribute="top" secondItem="Bt4-1a-VZ8" secondAttribute="top" id="nCo-DA-RYU"/>
+                                        <constraint firstItem="9Mw-5S-Vc2" firstAttribute="top" secondItem="6Iq-Ee-wok" secondAttribute="bottom" constant="3" id="wgy-A2-Se9"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="subviews">
+                                            <exclude reference="MHb-pA-Q1U"/>
+                                        </mask>
+                                    </variation>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="acronymLabel" destination="9Mw-5S-Vc2" id="s26-x3-Wdo"/>
+                                    <outlet property="nameLabel" destination="6Iq-Ee-wok" id="Dad-qd-3HO"/>
+                                    <outlet property="websiteTextView" destination="QCj-d4-lis" id="LtF-X5-w9H"/>
+                                    <outlet property="wikipediaTextView" destination="MHb-pA-Q1U" id="8Cf-kL-KfS"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Kyt-Yh-DyU" id="ge6-IZ-Nxh"/>
+                            <outlet property="delegate" destination="Kyt-Yh-DyU" id="jPy-oR-JMT"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Launch Service Providers" id="Dex-Q6-whh"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rBs-75-Kws" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="512.79999999999995" y="125.61576354679804"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="B0C-N1-MMI">
+            <objects>
+                <navigationController id="bjh-NQ-WVx" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1oy-Tc-NZi">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Kyt-Yh-DyU" kind="relationship" relationship="rootViewController" id="Te2-mH-8Ux"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wUP-qv-hXr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-439" y="126"/>
         </scene>
     </scenes>
 </document>
